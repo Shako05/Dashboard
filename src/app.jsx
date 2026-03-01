@@ -197,7 +197,7 @@ async function fetchBias(asset, signal) {
   const dateStr = now.toLocaleDateString("nl-NL", { year: "numeric", month: "long", day: "numeric" });
   const timeStr = now.toLocaleTimeString("nl-NL", { hour: "2-digit", minute: "2-digit" });
 
-  const response = await fetch("../api/analyze", {
+  const response = await fetch("../api/analyze.js", {
     method: "POST",
     signal,
     headers: { "Content-Type": "application/json" },
